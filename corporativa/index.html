@@ -1,137 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <title>Pàgina d'informació</title>
+    <title>PROIECTUS</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <ul>
-            <li><a href="">Informació</a></li>
-            <li><a href="">Wiki</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Xat</a></li>
-            <li><a href="">Missatgeria</a></li>
-        </ul>
+       <nav class="menu">
+           <ul>
+                <li><a href="">Informació</a></li>
+                <li><a target= "_blank" href="">Wiki</a></li>
+                <li><a target= "_blank" href="">Blog</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Xat</a></li>
+                <li><a href="">Missatgeria</a></li>
+           </ul>
+       </nav> 
     </header>
-    <h1 class="titol" id="titol-objectiu">El nostre objectiu</h1>
-    <div class="objectius">
-        <div class="text">
-            <p> Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                fames maecenas eu aptent sed fringilla at varius,
-                taciti volutpat cum hendrerit etiam diam.
-                Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                fames maecenas eu aptent sed fringilla at varius,
-                taciti volutpat cum hendrerit etiam diam.
-                Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                fames maecenas eu aptent sed fringilla at varius,
-                taciti volutpat cum hendrerit etiam diam.
-            </p>
-
-        </div>
-        <img id="foto-objectiu" src="./img/objectiu.png">
-    </div>
-    <div class="barra"></div>
-    <div class="com-funciona">
-        <h1 class="titol">Com funciona</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipiscing elit,
-            fames maecenas eu aptent sed fringilla at varius,
-            taciti volutpat cum hendrerit etiam diam.
-        </p>
-    </div>
-
-    <div class="barra"></div>
-    <h1 class="titol">Opinions</h1>
-    <div class="opinions">
-        <div class="opinio" id="opinio1">
-            <img src="./img/user.png" class="foto">
-            <h2 class="nom">Persona 1</h2>
-            <p class="contingut">
-                Text d'exemple Text d'exemple Text d'exemple Text d'exemple </br>
-                Text d'exemple Text d'exemple Text d'exemple
-
-            </p>
-        </div>
-        <div class="opinio" id="opinio2">
-            <img src="./img/user.png" class="foto">
-            <h2 class="nom">Persona 2</h2>
-            <p class="contingut"> Text d'exemple </p>
-        </div>
-        <div class="opinio" id="opinio3">
-            <img src="./img/user.png" class="foto">
-            <h2 class="nom"> Persona 3</h2>
-            <p class="contingut"> Text d'exemple</p>
-        </div>
-    </div>
-    <div class="punts">
-        <div class="tooltip">
-            <div class="punt" id="punt0" onclick="change (0)">
-                <p>1</p>
-            </div>
-            <p class="tooltiptext">Pàgina 1</p>
-        </div>
-
-        <div class="tooltip">
-            <div class="punt" id="punt1" onclick="change (1)">
-                <p>2</p>
-            </div>
-            <p class="tooltiptext">Pàgina 2</p>
-        </div>
-        <div class="tooltip">
-            <div class="punt" id="punt2" onclick="change (2)">
-                <p>3</p>
-            </div>
-            <p class="tooltiptext">Pàgina 3</p>
-        </div>
-    </div>
-    <div class="barra"></div>
-    <h1 class="titol">Equip</h1>
-    <div class="container">
-        <div class="transition">
-            <div class="linia" id="linia1">
-                <img src="./img/user.png" class="user">
-                <img src="./img/user.png" class="user">
-                <img src="./img/user.png" class="user">
-                <img src="./img/user.png" class="user">
-            </div>
-        </div>
-        <div class="linia" id="linia2">
-            <img src="./img/user.png" class="user">
-            <img src="./img/user.png" class="user">
-            <img src="./img/user.png" class="user">
-            <img src="./img/user.png" class="user">
-        </div>
-        <div class="linia" id="linia3">
-            <img src="./img/user.png" class="user">
-            <img src="./img/user.png" class="user">
-            <img src="./img/user.png" class="user">
-            <img src="./img/user.png" class="user">
-        </div>
-        <button id="boto">
-            <h3>Mostrar més</h3>
-        </button>
-    </div>
 </body>
-
-<script>
-    function change(x) {
-        for (i = 0; i < 3; i++) {
-            document.getElementById("punt" + i).classList.remove('punt-actiu');
-            if (i == x) {
-                document.getElementById("punt" + i).classList.add('punt-actiu');
-            }
-        }
-    }
-</script>
-    <!-- 
-    <script src = "./app.js"></script>
-    -->
 </html>
