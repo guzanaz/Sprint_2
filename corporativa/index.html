@@ -7,7 +7,6 @@
     <title>PROIECTUS</title>
     <!--css-->
     <link rel="stylesheet" type="text/css" href="./css/estilos.css"/>
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
 
     <!--webfonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -16,32 +15,40 @@
 
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="logo">
-                <img src="./img/logo_2.png" alt="proiectus">
+                <img class="logo" src="./img/logo_2.png">
         </div>
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
-            <span class="menu-icon_line"></span>
+          <span class="menu-icon__line"></span>
         </label>
-        <nav class="menu">
-           <ul>
-                <li><a href="">Informació</a></li>
-                <li><a target= "_blank" href="">Wiki</a></li>
-                <li><a target= "_blank" href="">Blog</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Xat</a></li>
-                <li><a href="">Missatgeria</a></li>
-           </ul>
-        </nav> 
+
+        <ul class="nav-links">
+            <li class="nav-link">
+                <a target= "_blank" href="">Wiki</a>
+            </li>
+            <li class="nav-link">
+                <a target= "_blank" href="">Blog</a>
+            </li>
+            <li class="nav-link">
+                <a href="">FAQs</a>
+            </li>
+            <li class="nav-link">
+                <a href="">Xat</a>
+            </li>
+            <li class="nav-link">
+                <a href="">Missatgeria</a>
+            </li>
+        </ul>
     </header>
     <main>
         <section class="home-section" id="home">
              <div class="presentacio">
-                 <h1>PROIECTUS</h1>
+                 <h1>PROIECTUS.CAT</h1>
              </div> 
              <div class="contenedor-parrafos">
-                <p>Este es un texto simulado para la presentacio de Proiectus.cat en principio no debe ser tan lago, 
+                <p>Este es un texto simulado para la presentacio de Proiectus.cat en principio no debe ser tan largo, 
                 debe ser lo suficientemente atractivo para que institutos y empresas quieran apuntarse y ser parte de la comunidad Proiectus </p>
                 <p>¿Qué esperas? ¡Ponte manos a la obra que habrá una gran tarea para fidelizar usuarios!</p>
              </div>

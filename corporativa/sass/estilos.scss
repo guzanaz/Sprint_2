@@ -1,15 +1,42 @@
+//webfont montserrat y webfont nunito
+@import 'fonts';
+
+//importamos scss de los colores
+@import 'colores';
+
+//importamos scss de la presentació
+@import 'presentacio';
+
+//importamos scss del header
+@import 'header';
+
+//importamos scss media (responsive)
+@import 'media';
+
+//importamos animaciones para menú responsive
+@import 'animations';
 
 
 
-
-// color palette variables
-$dark:#17252A;
-$darkcian:#2B7A78;
-$lightcian:#3AAFA9;
-$lightwhite:#DEF2F1;
-
-
-
-h1 {
-    color:green;
+*, *::before, *::after{
+   margin: 0px;
+   box-sizing: border-box;
 }
+
+body{
+   font-family: "Nunito", sans-serif;
+}
+
+.contenedor-parrafos{
+   width: 60%;
+   margin: 2rem auto;
+   p{
+      margin:1rem 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;
+   }
+
+}
+
+
+

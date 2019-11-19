@@ -1,0 +1,131 @@
+@import 'fonts';
+@import'colores';
+
+.main-header{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10.15625vh;//65px
+    width: 100vw;
+    padding: 0 10vw;
+    color:$dark;
+    z-index: 1;//cuando hagamos scroll el header estará por sobre todo el contenido
+    transition:0.4s ease-out;
+    .logo{
+        max-width: 9.765625vw;//125px
+        vertical-align: middle;
+        display: table-cell;
+    }
+    a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight:500;
+        letter-spacing: .1rem;
+        text-decoration:none;
+        color:inherit;
+        text-transform: uppercase;
+    }
+    //estilo ul
+    .nav-links {
+        display: flex;
+        list-style: none;
+        //estilo li y a
+        .nav-link {
+            //transición de salida del menú en mvl
+            transition:
+              opacity .4s ease-in-out,
+              transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                 //Blog
+                &:nth-of-type(2) {
+                    transition-delay: .1s;
+                }
+                //FAQs
+                &:nth-of-type(3) {
+                    transition-delay: .2s;
+                }
+                //Xat
+                &:nth-of-type(4) {
+                    transition-delay: .3s;
+                }
+                //Missatgeria
+                &:nth-of-type(5) {
+                    transition-delay: .4s;
+                }
+            a{
+                margin:0.2rem;
+                padding: 1.35rem 0.5rem;
+            }
+            a:hover{
+                font-weight: 600;
+                background:$darkcian;
+                color:$lightwhite;
+            }
+        }
+    }
+    .menu-icon{
+        position: relative;
+        padding:26px 10px;
+        cursor:pointer;
+        z-index: 1;
+        display:none;
+        
+        //línea del menú hambuerguesa
+        &__line{//la & siempre se refiere al elemento padre (.menu-icon)
+            display: block;
+            position: relative;
+            background: $dark;
+            height: 2px;
+            width: 20px;
+            border-radius: 4px;
+            transition: background 0.8s ease;
+            
+            //dos líneas restantes del menú hamburguesa
+            &::before, &::after{
+                content:'';
+                position:absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                background:$dark;
+                transition: background 0.8s ease;
+            }
+            &::before{
+                transform: translateY(-5px);
+            }
+            &::after{
+                transform: translateY(5px);
+            }
+        }
+    }
+    //esto es el checkbox
+    .menu-btn{
+        display: none;
+        top:-100px;
+
+        //marcador de selección del icono del menú
+        &:focus ~ .menu-icon{
+            .menu-icon__line{
+                &::before{
+                    transform:translateY(-7px);
+                }
+                &::after{
+                    transform:translateY(7px);
+                }
+            }
+        }
+    }
+    //automatizaremos el scroll con js en main.js
+    &.scrolled{
+        height:9.433962264150944vh;//65px
+        background: $dark;
+        color:$lightwhite;
+        //cambiaremos el color del menú al hacer 
+        .menu-icon{
+            &__line,
+            &__line::before,
+            &__line::after{
+                background: $lightwhite;
+            }
+        }
+    }
+}

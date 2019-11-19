@@ -1,0 +1,40 @@
+.presentacio {
+  height: 100vh;
+  background: url(../img/fondo_byn.jpg) no-repeat bottom center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  color: blanchedalmond;
+}
+.presentacio h1 {
+  position: relative;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 4vw;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 1.5625vw 0;
+}
+.presentacio h1::before, .presentacio h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+.presentacio h1::before {
+  left: 0;
+  border-bottom: 0.46875vw solid #DEF2F1;
+}
+.presentacio h1::after {
+  right: 0;
+  border-top: 0.46875vw solid #DEF2F1;
+}
+
+/*# sourceMappingURL=presentacio.css.map */

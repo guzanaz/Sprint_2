@@ -1,0 +1,99 @@
+//animación pulse para el menú responsive (hamburguesa)
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0px rgba(255,255, 255, 0.6);
+        background: rgba(255,255, 255, 0.6);
+      }
+      to {
+        box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
+        background: rgba(255,255, 255, 0);
+      }
+}
+
+//animación para transformar el menú hamburguesa en una X (abrir)
+
+/* barra superior del menú*/
+@keyframes openTop{
+    0%{
+        transform: translateY(-5px)
+        rotate(0deg);
+    }
+    50%{
+        transform: translateY(0px)
+        rotate(0deg);
+    }
+    100%{
+        transform: translateY(0px)
+        rotate(90deg);
+    }
+}
+/*barra central del menú*/
+@keyframes openMid{
+    //no necesitamos usar translate
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+/*barra inferior del menú*/
+@keyframes openBtm{
+    0%{
+        transform: translateY(5px)
+        rotate(0deg);
+    }
+    50%{
+        transform: translateY(0px)
+        rotate(0deg);
+    }
+    100%{
+        transform: translateY(0px)
+        rotate(90deg);
+    }
+}
+
+//animación para transformar el menú hamburguesa en una X (cerrar)
+
+/* barra superior del menú*/
+@keyframes closedTop{
+    0%{
+        transform: translateY(-5px)
+        rotate(0deg);
+    }
+    50%{
+        transform: translateY(0px)
+        rotate(0deg);
+    }
+    100%{
+        transform: translateY(0px)
+        rotate(90deg);
+    }
+}
+/*barra central del menú*/
+@keyframes clsedMid{
+    //no necesitamos usar translate
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+/*barra inferior del menú*/
+@keyframes closedBtm{
+    0%{
+        transform: translateY(5px)
+        rotate(0deg);
+    }
+    50%{
+        transform: translateY(0px)
+        rotate(0deg);
+    }
+    100%{
+        transform: translateY(0px)
+        rotate(90deg);
+    }
+}
