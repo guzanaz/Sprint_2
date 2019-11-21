@@ -1,6 +1,15 @@
 /*gridsystem*/
 //variable para el nro de columnas
-$columns:12;
+$grid-columns:12;
+
+//variables para los anchos máx. de pantalla 
+$grid-max-width:1200px; //breakpoint-small
+$breakpoint-small:"only screen and (min-width:0px)";
+$breakpoint-medium:"only screen and (min-width:768px)";
+$breakpoint-large: "only screen and (min-width:1008px)";
+$breakpoint-xl:"only screen and (min-width:1300px)";
+
+
 
 //damos formato a los divs container y row
 .container{
@@ -16,17 +25,68 @@ $columns:12;
   }
 //creamos un selector con una condición:
     //todos los divs que tengan atributos de una clase que comience con "col-" tendrán las siguientes propiedades:
-    div[class^="col-"]{
+    div[class*="col-"] {
+      padding: 1rem;
+      width: 100%;
+      min-height: 1px;
+      display: inline-block;
       background: pink;
       border: 1px solid red;
-      padding: 1rem 0;
-      text-align: center;
   }
 
-//Para cada número del 1 al 12, reemplaza la i por ése número  
-@for $i from 1 to $columns{
-    .col-#{$i}{
-    flex: 0 0 100% / ($columns * $i);
+
+//prueba para pantallas pequeñas  
+@media #{$breakpoint-small}{
+  .container{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  //Para cada número del 1 al 12, reemplaza la i por ése número  
+  @for $i from 1 to $grid-columns{
+    .col-sm-#{$i}{
+    width: 100% / ($grid-columns * $i);
     }
+  }
 }
 
+//prueba para pantallas medium  
+@media #{$breakpoint-medium}{
+  .container{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  //Para cada número del 1 al 12, reemplaza la i por ése número  
+  @for $i from 1 to $grid-columns{
+    .col-md-#{$i}{
+    width: 100% / ($grid-columns * $i);
+    }
+  }
+}
+
+//prueba para pantallas large 
+@media #{$breakpoint-large}{
+  .container{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  //Para cada número del 1 al 12, reemplaza la i por ése número  
+  @for $i from 1 to $grid-columns{
+    .col-lg-#{$i}{
+    width: 100% / ($grid-columns * $i);
+    }
+  }
+}
+
+//prueba para pantallas extra-large 
+@media #{$breakpoint-xl}{
+  .container{
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  //Para cada número del 1 al 12, reemplaza la i por ése número  
+  @for $i from 1 to $grid-columns{
+    .col-xl-#{$i}{
+    width: 100% / ($grid-columns * $i);
+    }
+  }
+}
