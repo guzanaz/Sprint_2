@@ -88,7 +88,7 @@
 }
 .main-header .nav-links .nav-link a {
   margin: 0.2rem;
-  padding: 1.35rem 0.5rem;
+  padding: 1.45rem 0.7rem;
 }
 .main-header .nav-links .nav-link a:hover {
   font-weight: 600;
@@ -336,4 +336,4 @@ body {
   font-size: 1em;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=main.css.map */
