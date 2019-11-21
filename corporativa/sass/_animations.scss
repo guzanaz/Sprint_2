@@ -1,4 +1,4 @@
-//animación pulse para el menú responsive (hamburguesa)
+/*animación pulse para el menú responsive (hamburguesa)*/
 @keyframes pulse {
     from {
         box-shadow: 0 0 0 0px rgba(255,255, 255, 0.6);
@@ -10,9 +10,9 @@
       }
 }
 
-//animación para transformar el menú hamburguesa en una X (abrir)
+/*animación para transformar el menú hamburguesa en una X (abrir)*/
 
-/* barra superior del menú*/
+// barra superior del menú
 @keyframes openTop{
     0%{
         transform: translateY(-5px)
@@ -27,7 +27,7 @@
         rotate(90deg);
     }
 }
-/*barra central del menú*/
+//barra central del menú
 @keyframes openMid{
     //no necesitamos usar translate
     50%{
@@ -38,7 +38,7 @@
     }
 }
 
-/*barra inferior del menú*/
+//barra inferior del menú
 @keyframes openBtm{
     0%{
         transform: translateY(5px)
@@ -54,9 +54,9 @@
     }
 }
 
-//animación para transformar el menú hamburguesa en una X (cerrar)
+/*animación para transformar el menú hamburguesa en una X (cerrar)*/
 
-/* barra superior del menú*/
+//barra superior del menú
 @keyframes closedTop{
     0%{
         transform: translateY(-5px)
@@ -71,7 +71,7 @@
         rotate(90deg);
     }
 }
-/*barra central del menú*/
+//barra central del menú
 @keyframes clsedMid{
     //no necesitamos usar translate
     50%{
@@ -82,7 +82,7 @@
     }
 }
 
-/*barra inferior del menú*/
+//barra inferior del menú
 @keyframes closedBtm{
     0%{
         transform: translateY(5px)

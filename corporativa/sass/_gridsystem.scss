@@ -1,0 +1,32 @@
+/*gridsystem*/
+//variable para el nro de columnas
+$columns:12;
+
+//damos formato a los divs container y row
+.container{
+  width: calc(100% - 2rem);
+  max-width: 60rem;
+  margin: 0 auto;
+  background: lightblue;//ponemos un color de fondo para ir haciendo pruebas
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+//creamos un selector con una condición:
+    //todos los divs que tengan atributos de una clase que comience con "col-" tendrán las siguientes propiedades:
+    div[class^="col-"]{
+      background: pink;
+      border: 1px solid red;
+      padding: 1rem 0;
+      text-align: center;
+  }
+
+//Para cada número del 1 al 12, reemplaza la i por ése número  
+@for $i from 1 to $columns{
+    .col-#{$i}{
+    flex: 0 0 100% / ($columns * $i);
+    }
+}
+

@@ -1,7 +1,7 @@
 //webfont montserrat y webfont nunito
 @import 'fonts';
 
-//importamos scss de los colores
+//importamos scss de las variables
 @import 'colores';
 
 //importamos scss de la presentació
@@ -16,8 +16,9 @@
 //importamos animaciones para menú responsive
 @import 'animations';
 
-//importamos el grid system
-@import 'grid';
+//importamos animaciones para menú responsive
+@import 'gridsystem';
+
 
 
 *, *::before, *::after{
@@ -37,7 +38,6 @@ body{
       font-family: 'Montserrat', sans-serif;
       font-size: 1em;
    }
-
 }
 
 
