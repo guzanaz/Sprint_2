@@ -317,6 +317,17 @@
     transform: translateY(0px) rotate(90deg);
   }
 }
+.container {
+  width: calc(100% - 10em);
+  max-width: 60em;
+  margin: 0 auto;
+  background: lightblue;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 *, *::before, *::after {
   margin: 0px;
   box-sizing: border-box;
