@@ -382,6 +382,7 @@ div[class^=col-] {
   flex: 91.6666666667%;
 }
 
+/*qué fa items*/
 *, *::before, *::after {
   margin: 0px;
   box-sizing: border-box;
