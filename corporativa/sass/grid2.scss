@@ -1,0 +1,28 @@
+@import 'grid2variables';
+
+.row{
+    max-width:$grid-width;
+    background-color:#eee;
+    margin:0 auto;//para centrar los elementos bloques dentro de otro bloque
+
+    //para que el último elemento de la grilla no tenga margin button hacemos un pseudoclass
+    //seleccionará todo menos el last-child
+    &:not(:last-child){//.row:not()
+        margin-bottom: $gutter-vertical;
+    }
+
+    .col-1-of-2{
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        background-color: orangered;
+        float: left;
+
+        //no añadiremos el margen a la derecha para el :last-child
+        &:not(:last-child){
+            margin-right:$gutter-horizontal;
+        }
+
+    }
+}
+
+
+

@@ -32,14 +32,14 @@ $breakpoint-xl:"only screen and (min-width:1300px)";
 
 //creamos un selector con una condición:
     //todos los divs que tengan atributos de una clase que comience con "col-" tendrán las siguientes propiedades:
-    div[class*="col-"] {
+    div[class^="col-"] {
       box-sizing: border-box; 
       padding: 1rem;
       width: 100%;
       min-height: 1px;
       display: inline-block;
-      background: pink;
-      border: 1px solid red;
+      //background: pink;
+      //border: 1px solid red;
   }
 
 

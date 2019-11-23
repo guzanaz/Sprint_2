@@ -16,14 +16,12 @@
   clear: both;
 }
 
-div[class*=col-] {
+div[class^=col-] {
   box-sizing: border-box;
   padding: 1rem;
   width: 100%;
   min-height: 1px;
   display: inline-block;
-  background: pink;
-  border: 1px solid red;
 }
 
 @media only screen and (min-width:0px) {
