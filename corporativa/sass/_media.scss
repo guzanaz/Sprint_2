@@ -117,3 +117,11 @@
         font-size: 6vw;
       }
 }
+
+@media screen and (max-width: 480px){
+    //máximo de ancho de pantalla
+    $grid-width:480px;
+
+    .col-sm-4-of-4
+    
+}
