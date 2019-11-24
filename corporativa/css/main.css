@@ -1511,6 +1511,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 *, *::before, *::after {
@@ -1533,8 +1534,11 @@ body {
 .contenedor-seccion .titol-seccion {
   font-family: "Nunito", sans-serif;
   text-transform: uppercase !important;
-  font-weight: 700;
+  letter-spacing: 0.12rem;
+  font-weight: 800;
   font-size: 1.2 rem;
+  margin: 2rem 0.2rem 4rem 0.2rem;
+  text-align: center;
 }
 
 .contenedor-parrafos {
