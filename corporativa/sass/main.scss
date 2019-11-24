@@ -16,9 +16,12 @@
 //importamos animaciones para menú responsive
 @import 'animations';
 
-//importamos gridsystem
-//@import 'gridsystem';
-@import 'grid2';
+//importamos los elementos del gridsystem
+@import 'grid-variables';
+@import 'grid';
+@import 'grid-mixins';
+@import 'visibility';
+@import 'visibility-mixins';
 
 //importamos que fa items
 @import 'que_fa_items';
