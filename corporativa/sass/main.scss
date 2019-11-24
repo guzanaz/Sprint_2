@@ -36,6 +36,24 @@ body{
    font-family: "Nunito", sans-serif;
 }
 
+.contenedor-seccion{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: 95%;
+   margin: auto;
+   justify-content: space-around;
+
+   .titol-seccion{
+      font-family: 'Nunito', sans-serif;
+      text-transform: uppercase !important;
+      font-weight: 700;
+      font-size:1.2 rem;
+      
+   }
+   
+}
+
 .contenedor-parrafos{
    width: 60%;
    margin: 2rem auto;

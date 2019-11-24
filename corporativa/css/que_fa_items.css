@@ -1,15 +1,6 @@
 @charset "UTF-8";
 /*color palette variables*/
 /*qué fa items*/
-.contenedor-seccion {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 95%;
-  margin: auto;
-  justify-content: space-around;
-}
-
 .clearfix {
   display: inline-block;
 }
