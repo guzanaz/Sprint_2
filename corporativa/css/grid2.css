@@ -1,5 +1,18 @@
+/*devices max width*/
+/*gutters(espacios entre bloques del grid)*/
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  background: lightblue;
+}
+.contenedor::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row {
-  max-width: 1140px;
+  width: 100%;
   background-color: #eee;
   margin: 0 auto;
 }
@@ -18,23 +31,36 @@
 .row [class^=col-]:not(:last-child) {
   margin-right: 60px;
 }
-.row .col-1-of-2- {
-  width: calc((100% - 60px) / 2);
-}
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 60px) / 3);
-}
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 60px) / 3) + 60px);
-}
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 60px) / 4);
-}
-.row .col-2-of-4 {
-  width: calc(2* ((100% - 3 * 60px) / 4) + 60px);
-}
-.row .col-3-of-4 {
-  width: calc(3* ((100% - 3 * 60px) / 4) + (2 * 60px));
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 80%;
+  }
+
+  .row {
+    width: 100%;
+  }
+  .row .col-1-of-2 {
+    width: calc((100% - 60px) / 2);
+  }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 60px) / 3);
+  }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 60px) / 3) + 60px);
+  }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 60px) / 4);
+  }
+  .row .col-2-of-4 {
+    width: calc(2* ((100% - 3 * 60px) / 4) + 60px);
+  }
+  .row .col-3-of-4 {
+    width: calc(3* ((100% - 3 * 60px) / 4) + (2 * 60px));
+  }
+  .row .col-4-of-4 {
+    width: calc(4* ((100% - 3 * 60px) / 4) + (3 * 60px));
+  }
 }
 
 /*# sourceMappingURL=grid2.css.map */

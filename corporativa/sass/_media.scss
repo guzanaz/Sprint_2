@@ -1,5 +1,8 @@
 @import 'colores';
 
+@import 'grid2';
+@import 'grid2variables';
+
 @media only screen and (max-width:767px){
     .main-header{
         .logo{
@@ -118,10 +121,33 @@
       }
 }
 
-@media screen and (max-width: 480px){
-    //máximo de ancho de pantalla
-    $grid-width:480px;
 
-    .col-sm-4-of-4
-    
+@media only screen and (max-width:$mobile-grid-width){
+    .contenedor{
+        width: 95%;
+    }
+
+    .row{
+        width: 100%;
+        &:not(:last-child){//.row:not()
+            margin-bottom: $gutter-vertical;
+        }
+
+        [class^="col-"]{
+            //no añadiremos el margen a la derecha para el :last-child
+            &:not(:last-child){
+                margin-right:$gutter-horizontal-mbl;
+            }
+        }
+
+
+        .col-sm-1-of-4{
+            width:calc((100% - 3 * #{$gutter-horizontal-mbl}) / 4);
+        }
+
+        .col-sm-2-of-4{
+            width: calc((2* (100% - 2 * #{$gutter-horizontal-mbl}) / 4) - (2*#{$gutter-horizontal-mbl}));
+        }
+    }
+
 }

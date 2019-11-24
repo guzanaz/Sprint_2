@@ -1,8 +1,20 @@
 @import 'mixin';
 @import 'grid2variables';
 
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    background: lightblue;//ponemos un color de fondo para ir haciendo pruebas
+    
+    &::after{
+    content: '';
+    display: table;
+          clear: both;
+    }
+}
+
 .row{
-    max-width:$desktop-grid-width;
+    width: 100%;
     background-color:#eee;
     margin:0 auto;//para centrar los elementos bloques dentro de otro bloque
 
@@ -26,32 +38,47 @@
             margin-right:$gutter-horizontal;
         }
     }
-
-    .col-1-of-2-{
-        width: calc((100% - #{$gutter-horizontal}) / 2);
-    }
-
-    .col-1-of-3{
-        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-    }
-
-    .col-2-of-3{
-        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
-    }
-
-    .col-1-of-4{
-        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    }
-
-    .col-2-of-4{
-        width: calc(2* ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
-    }
-
-    .col-3-of-4{
-        width: calc(3* ((100% - 3 * #{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal}));
-    }
-
 }
 
+
+
+
+@media only screen and(max-width:$desktop-grid-width){
+    .container{
+        width: 80%;
+    }
+
+    .row{
+        width: 100%;
+
+        .col-1-of-2{
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+        }
+    
+        .col-1-of-3{
+            width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+        }
+    
+        .col-2-of-3{
+            width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+        }
+    
+        .col-1-of-4{
+            width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+        }
+    
+        .col-2-of-4{
+            width: calc(2* ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+        }
+    
+        .col-3-of-4{
+            width: calc(3* ((100% - 3 * #{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal}));
+        }
+    
+        .col-4-of-4{
+            width: calc(4* ((100% - 3 * #{$gutter-horizontal}) / 4) + (3 * #{$gutter-horizontal}));
+        }
+    }
+}
 
 
