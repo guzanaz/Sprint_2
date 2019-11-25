@@ -92,7 +92,7 @@ body{
    }         
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:340px){
    .contenedor-seccion{
       display: flex;
       flex-wrap: wrap;
@@ -123,11 +123,11 @@ body{
          flex-direction: row;
          margin-bottom: 15px;
          //box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.75); /* CSS Advanced sombra y colores */
-         background-color:$dark;
+         //background-color:$dark;
    
          .thumbnail-que-es {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             margin: 25px 20px 20px 45px;
             align-self: center;
             position: relative;

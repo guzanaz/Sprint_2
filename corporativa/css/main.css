@@ -245,16 +245,6 @@
     font-size: 6vw;
   }
 }
-@media only screen and (max-width: 320px) {
-  .contenedor-seccion .container-que-es .thumbnail-que-es {
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-  }
-  .contenedor-seccion .container-que-es .thumbnail-que-es .img-que-es {
-    height: 100%;
-  }
-}
 /*animación pulse para el menú responsive (hamburguesa)*/
 @keyframes pulse {
   from {
@@ -1586,7 +1576,7 @@ body {
   /* CSS Advanced sombra y colores */
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
   .contenedor-seccion {
     display: flex;
     flex-wrap: wrap;
@@ -1614,11 +1604,10 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 15px;
-    background-color: #17252A;
   }
   .contenedor-seccion .container-que-es .thumbnail-que-es {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin: 25px 20px 20px 45px;
     align-self: center;
     position: relative;
