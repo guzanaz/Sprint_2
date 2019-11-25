@@ -33,11 +33,8 @@
         .nav-link {
             //transición de salida del menú en mvl
             transition:
-                opacity .6s ease-in-out,
-                transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);//efecto elástico
-                /*queremos que aparezcan individualmente con el efecto anterior
-                y enumeramos cada nav-link para dar un delay en la transición*/
-              
+              opacity .4s ease-in-out,
+              transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                  //Blog
                 &:nth-of-type(2) {
                     transition-delay: .1s;
@@ -65,13 +62,10 @@
                     transition-delay: .6s;
                 }
 
-            .icon-div{
-               color:$lightwhite;
-            }
 
             a{
-                margin:0.2rem;
-                padding: 1.45rem 0.7rem;
+                margin:0.1rem;
+                padding: 1rem 0.7rem;
             }
             a:hover{
                 font-weight: 600;

@@ -89,9 +89,15 @@
 .main-header .nav-links .nav-link:nth-of-type(5) {
   transition-delay: 0.4s;
 }
+.main-header .nav-links .nav-link:nth-of-type(6) {
+  transition-delay: 0.5s;
+}
+.main-header .nav-links .nav-link:nth-of-type(7) {
+  transition-delay: 0.6s;
+}
 .main-header .nav-links .nav-link a {
-  margin: 0.2rem;
-  padding: 1.45rem 0.7rem;
+  margin: 0.1rem;
+  padding: 1rem 0.7rem;
 }
 .main-header .nav-links .nav-link a:hover {
   font-weight: 600;
@@ -1535,7 +1541,6 @@
   background-color: #17252A;
 }
 .footer .container-footer {
-  height: auto;
   position: relative;
   text-align: center;
   justify-content: space-around !important;
