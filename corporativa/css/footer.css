@@ -1,0 +1,55 @@
+/*color palette variables*/
+/* FOOTER */
+.footer {
+  display: inline-flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 0px;
+  background-color: #17252A;
+}
+.footer .container-footer {
+  height: auto;
+  position: relative;
+  text-align: center;
+  justify-content: space-around !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.footer .container-footer .thumbnail-footer {
+  width: 100px;
+  height: auto;
+  margin: 15px;
+  position: relative;
+  display: inline-block;
+}
+.footer .container-footer .thumbnail-footer .img-footer {
+  width: 100%;
+  height: auto;
+  float: left;
+  position: absolute;
+  background-color: #DEF2F1;
+  object-fit: cover;
+  /*CSS Advanced*/
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  /* CSS Advanced sombra y colores */
+}
+.footer .container-footer ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.footer .container-footer ul li a {
+  text-decoration: none;
+}
+.footer .container-footer .fa-facebook-square, .footer .container-footer .fa-twitter,
+.footer .container-footer .fa-instagram, .footer .container-footer .fa-linkedin {
+  color: #DEF2F1;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -69,7 +69,7 @@
               transform: translateX(0);
               transition:
                 opacity .6s ease-in-out,
-                transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);//efecto elástico
+                transform 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);//efecto elástico
                 /*queremos que salgan individualmente con el efecto anterior
                 y enumeramos cada nav-link para dar un delay en la transición*/
               
