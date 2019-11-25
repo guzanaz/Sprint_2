@@ -13,6 +13,7 @@
 }
 
 .que-fa-container {
+  overflow: hidden;
   position: relative;
   text-align: center;
   flex-wrap: wrap;

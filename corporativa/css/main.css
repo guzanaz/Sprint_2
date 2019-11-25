@@ -44,16 +44,6 @@
   border-top: 0.46875vw solid #DEF2F1;
 }
 
-.img.div {
-  display: flex;
-  width: 300px;
-  heigh: auto;
-}
-.img.div .img-next-to-text {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 /*color palette variables*/
 .main-header {
   position: fixed;
@@ -253,6 +243,16 @@
 
   .presentacio h1 {
     font-size: 6vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .contenedor-seccion .container-que-es .thumbnail-que-es {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+  .contenedor-seccion .container-que-es .thumbnail-que-es .img-que-es {
+    height: 100%;
   }
 }
 /*animación pulse para el menú responsive (hamburguesa)*/
@@ -1467,6 +1467,7 @@
 }
 
 .que-fa-container {
+  overflow: hidden;
   position: relative;
   text-align: center;
   flex-wrap: wrap;
@@ -1538,7 +1539,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
   justify-content: space-around;
 }
 .contenedor-seccion .titol-seccion {
@@ -1551,9 +1552,96 @@ body {
   text-align: center;
   color: #17252A;
 }
+.contenedor-seccion .container-que-es {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  justify-content: space-around !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.contenedor-seccion .container-que-es .thumbnail-que-es {
+  width: 250px;
+  height: 250px;
+  margin: 25px 20px 20px 45px;
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #3AAFA9;
+}
+.contenedor-seccion .container-que-es .thumbnail-que-es .img-que-es {
+  height: 100%;
+  float: left;
+  position: absolute;
+  bottom: 5px;
+  left: -25px;
+  border-radius: 50%;
+  background-color: #DEF2F1;
+  object-fit: cover;
+  /*CSS Advanced*/
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  /* CSS Advanced sombra y colores */
+}
 
+@media only screen and (max-width: 320px) {
+  .contenedor-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .contenedor-seccion .titol-seccion {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12rem;
+    font-weight: 800;
+    font-size: 1.2 rem;
+    margin: 2rem 0.2rem 4rem 0.2rem;
+    text-align: center;
+    color: #17252A;
+  }
+  .contenedor-seccion .container-que-es {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 15px;
+    background-color: #17252A;
+  }
+  .contenedor-seccion .container-que-es .thumbnail-que-es {
+    width: 200px;
+    height: 200px;
+    margin: 25px 20px 20px 45px;
+    align-self: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #3AAFA9;
+  }
+  .contenedor-seccion .container-que-es .thumbnail-que-es .img-que-es {
+    height: 100%;
+    float: left;
+    position: absolute;
+    bottom: 5px;
+    left: -25px;
+    border-radius: 50%;
+    background-color: #DEF2F1;
+    object-fit: cover;
+    /*CSS Advanced*/
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    /* CSS Advanced sombra y colores */
+  }
+}
 .contenedor-parrafos {
-  width: 50%;
+  width: 100%;
   margin: 2rem auto;
 }
 .contenedor-parrafos p {
