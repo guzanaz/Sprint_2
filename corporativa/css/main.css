@@ -1530,13 +1530,14 @@
 /*color palette variables*/
 /* FOOTER */
 .footer {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   text-decoration: none;
   list-style: none;
   width: 100%;
   height: auto;
   position: relative;
+  margin-top: 50px;
   margin-bottom: 0px;
   background-color: #17252A;
 }
@@ -1546,38 +1547,60 @@
   justify-content: space-around !important;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-bottom: 15px;
+  margin: 50px 0px;
 }
 .footer .container-footer .thumbnail-footer {
-  width: 100px;
+  vertical-align: middle;
+  width: 190px;
   height: auto;
-  margin: 15px;
+  margin: auto;
   position: relative;
-  display: inline-block;
+  display: flex;
+  float: left;
 }
 .footer .container-footer .thumbnail-footer .img-footer {
   width: 100%;
   height: auto;
   float: left;
   position: absolute;
-  background-color: #DEF2F1;
   object-fit: cover;
   /*CSS Advanced*/
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   /* CSS Advanced sombra y colores */
 }
+.footer .container-footer .wrapper {
+  text-align: center;
+  display: inline-flex;
+}
+.footer .container-footer ul {
+  padding-inline-start: 0px;
+}
+.footer .container-footer ul .wrapper ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom: 1;
+  *display: inline;
+}
 .footer .container-footer ul li {
   text-decoration: none;
   list-style: none;
 }
+.footer .container-footer ul li .wrapper li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
 .footer .container-footer ul li a {
   text-decoration: none;
 }
-.footer .container-footer .fa-facebook-square, .footer .container-footer .fa-twitter,
-.footer .container-footer .fa-instagram, .footer .container-footer .fa-linkedin {
+.footer .container-footer ul li a .fa-facebook-square, .footer .container-footer ul li a .fa-twitter,
+.footer .container-footer ul li a .fa-instagram, .footer .container-footer ul li a .fa-linkedin {
   color: #DEF2F1;
-  padding-left: 3px;
-  padding-right: 3px;
+}
+.footer .container-footer ul li:not(:last-child) {
+  margin-right: 15px;
 }
 
 *, *::before, *::after {
