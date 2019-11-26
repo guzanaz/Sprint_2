@@ -13,27 +13,26 @@
     margin-top: 50px;
 	margin-bottom: 0px;
     background-color:$dark;
+
     .container-footer{
         position: relative;
         text-align: center;
         justify-content:space-around !important;
         flex-wrap: wrap;
         flex-direction: row;
-        margin: 50px 0px;
+        margin: 70px 0px;
         //box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.75); /* CSS Advanced sombra y colores */
         //background-color:$dark;
         .thumbnail-footer {
-            vertical-align: middle;
               width: 190px;
               height: auto;
-              margin: auto;
-              position: relative;
+              margin: 0 auto;
+              position: absolute;
               display: flex;
-              float: left;
+              justify-content: flex-start; 
                 .img-footer{
-                 width:100%;
+                 width:150px;
                  height: auto;
-                 float: left;
                  position: absolute;
                  //background-color:$lightwhite;
                  object-fit: cover; /*CSS Advanced*/
@@ -70,6 +69,14 @@
 
                 a{
                     text-decoration: none;
+                    .faqs{
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        color: $lightwhite;
+                    }
+                
+
                     .fa-facebook-square,.fa-twitter,
                     .fa-instagram,.fa-linkedin {
                         color:$lightwhite;
@@ -85,10 +92,41 @@
 
 }
   
-  
-  
 
-  
-  
+@media only screen and(max-width:900px){
+
+    .container-footer{
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 15px;
+        //background-color: #F2F2F2;
+        
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .thumbnail-footer {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            background-color:red;
+        }
+                  
+        .img-footer{
+            width:100%;
+            height: auto;
+            object-fit: cover; /*CSS Advanced*/
+        } 
+        
+        .img-footer-wrapper{
+            width: 50%;
+           }
+    }    
+}
   
   
