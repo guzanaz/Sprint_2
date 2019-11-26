@@ -14,6 +14,7 @@
   align-items: center;
   padding: 0 10vw;
   color: blanchedalmond;
+  margin-bottom: 12.3367198839vh;
 }
 .presentacio h1 {
   position: relative;
@@ -50,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10.15625vh;
+  height: 7.5vh;
   width: 100vw;
   padding: 0 10vw;
   color: #17252A;
@@ -66,6 +67,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.1rem;
+  font-size: 1rem;
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
@@ -146,7 +148,7 @@
   transform: translateY(7px);
 }
 .main-header.scrolled {
-  height: 9.4339622642vh;
+  height: 7.5vh;
   background: #17252A;
   color: #DEF2F1;
 }
@@ -1759,6 +1761,8 @@ body {
   margin: 1rem 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
+  font-weight: 500;
+  line-height: 1.4em;
 }
 
 /*# sourceMappingURL=main.css.map */
