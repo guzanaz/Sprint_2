@@ -9,8 +9,8 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  //Overrides flexbox's default behavior of making all children equal height
-  // align-items: flex-start; // If this was not in place it would require two classes to make a row full of unequal height columns aligned top, middle, bottom
+  //Sobreescribe el comportamiento por default de flexbox que hace que todos los hijos tengan la misma altura (propiedad height)
+  // align-items: flex-start; // Si esto no estuviera en su lugar, requeriría dos clases para hacer una fila llena de columnas de altura desigual alineadas top, middle, bottom
   @if type-of($content-well-max-width) == number and $content-well-max-width != 0 and $full-width == "false"{
     max-width: $content-well-max-width;
   }
@@ -32,7 +32,7 @@
   flex-direction: column-reverse;
 }
 
-// Condition to run inside of the col mixin 
+// Condicion para ejecutar dentro del mixin col 
 @mixin col-condition($col-number) {
   @if type-of($col-number) == number {
     @if $col-number > $grid-columns or $col-number == 0 {
@@ -43,8 +43,8 @@
       max-width: 100% / $grid-columns * $col-number;
       padding: $gutter;
     }
-  // If no col number is passed then arg is set to "auto" by default
-  // "auto" mode fills the horizontal space with evenly sized containers
+  // Si no se pasa ningún número de col, entonces arg se establece en "auto" de forma predeterminada
+  // el modo "automático" llena el espacio horizontal con contenedores de tamaño uniforme
   } @else if $col-number == "auto" {
     box-sizing: border-box;
     flex-grow: 1;
@@ -54,10 +54,10 @@
   } @else {
     @warn "Column number argument must either be the string 'auto' or a number greater than 0 and less than or equal to total number of columns in the grid (#{$grid-columns})";
   }
-} // Condition to run inside of the col mixin * not for developer use *
+} // Condicion para ejecutar dentro del  mixin col 
 
 @mixin col($breakpoint: "xs", $col-number: "auto") {
-  // If no breakpoint is passed and a col number is just use the first arg as the col number and act like xs
+  // Si no se pasa breakpoint y se usa un número col, simplemente usa el primer argumento como número col y actúa como xs
   @if type-of($breakpoint) == number {
     $col-number: $breakpoint;
     @include col-condition($col-number);
@@ -84,7 +84,7 @@
   }
 }
 
-// Condition to run inside of the col-offset mixin * not for developer use *
+// Condicion para ejecutar dentro del mixin col-offset 
 @mixin col-offset-condition($offset-number) {
   @if type-of($offset-number) != number {
     @warn "Column offset number must be a number (only arg or second arg in the col mixin)";
@@ -95,10 +95,10 @@
   } @else {
     margin-left: 100% / $grid-columns * $offset-number;
   }
-} // Condition to run inside of the col-offset mixin * not for developer use *
+} // Condicion para ejecutar dentro del mixin col-offset
 
 @mixin col-offset($breakpoint: "xs", $offset-number: 0) {
-  // If no breakpoint is passed and a col number is just use the first arg as the col number and act like xs
+  // Si no se pasa breakpoint y se usa un número col, simplemente usa el primer argumento como número col y actúa como xs
   @if type-of($breakpoint) == number {
     $offset-number: $breakpoint;
     @include col-offset-condition($offset-number);

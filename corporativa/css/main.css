@@ -157,6 +157,9 @@
 }
 
 /*color palette variables*/
+/*Variables del Grid*/
+/*Breakpoints*/
+/*Crea declaraciones de rango de distintos break points para usar con  media queries*/
 @media only screen and (max-width: 767px) {
   .main-header .logo {
     max-width: 125px;
@@ -332,6 +335,12 @@
     transform: translateY(0px) rotate(90deg);
   }
 }
+/*Variables del Grid*/
+/*Breakpoints*/
+/*Crea declaraciones de rango de distintos break points para usar con  media queries*/
+/*Variables del Grid*/
+/*Breakpoints*/
+/*Crea declaraciones de rango de distintos break points para usar con  media queries*/
 .row {
   box-sizing: border-box;
   margin: 0 auto;

@@ -1,30 +1,30 @@
-// Grid
-$grid-columns: 12 !default; // Set number of columns in the grid
+/*Variables del Grid*/
+$grid-columns: 12 !default; // Establece el nro de columnas dentro del grid
 
-$xs-max: 600px !default; // Set xs breakpoint's max width
-$sm-max: 908px !default; // Set sm breakpoint's max width
-$md-max: 1200px !default; // Set md breakpoint's max width
-$lg-max: 1800px !default; // Set lg breakpoint's max width
+$xs-max: 600px !default; // Establece el breakpoint para el max width xs
+$sm-max: 908px !default; // Establece el breakpoint para el max width sm
+$md-max: 1200px !default; // Establece el breakpoint para el max width md
+$lg-max: 1800px !default; // Establece el breakpoint para el max width lg 
 
-$gutter: 1rem !default; // Set gutter size
+$gutter: 1rem !default; // establece el tamaño del gutter (espaciado entre columnas)
 
 $content-well-max-width: 90% !default; // Set the max-width of the content well
 
-$sm-start: ($xs-max + 1); // Generate sm breakpoint's min width
-$md-start: ($sm-max + 1); // Generate md breakpoint's min width
-$lg-start: ($md-max + 1); // Generate lg breakpoint's min width
-$xl-start: ($lg-max + 1); // Generate xl breakpoint's min width
+$sm-start: ($xs-max + 1); // Genera el breakpoint para el min width de sm  
+$md-start: ($sm-max + 1); // Genera el breakpoint para el min width de md
+$lg-start: ($md-max + 1); // Genera el breakpoint para el min width de lg
+$xl-start: ($lg-max + 1); // Genera el breakpoint para el min width de xl
 
-// Breakpoints
-// Create breakpoint range statements to be used in media queries
+/*Breakpoints*/
+/*Crea declaraciones de rango de distintos break points para usar con  media queries*/
 $breakpoint-xs-only: "only screen and (max-width: #{$xs-max})"; // 0 -> xs-max range
-$breakpoint-sm-up: "only screen and (min-width: #{$sm-start})"; // sm-start -> up range
-$breakpoint-sm-only: "only screen and (min-width: #{$sm-start}) and (max-width: #{$sm-max})"; // sm-start -> sm-max range
-$breakpoint-md-up: "only screen and (min-width: #{$md-start})"; // md-start -> up range
-$breakpoint-md-only: "only screen and (min-width: #{$md-start}) and (max-width: #{$md-max})"; // md-start -> md-max range
-$breakpoint-lg-up: "only screen and (min-width: #{$lg-start})"; // lg-start -> up range
-$breakpoint-lg-only: "only screen and (min-width: #{$lg-start}) and (max-width: #{$lg-max})"; // lg-start -> lg-max range
-$breakpoint-xl-up: "only screen and (min-width: #{$xl-start})"; // xl-start -> up range
+$breakpoint-sm-up: "only screen and (min-width: #{$sm-start})"; // sm-comienzo -> rango de alcance
+$breakpoint-sm-only: "only screen and (min-width: #{$sm-start}) and (max-width: #{$sm-max})"; // sm-comienzo -> rango máx sm
+$breakpoint-md-up: "only screen and (min-width: #{$md-start})"; // md-comienzo -> rango de alcance
+$breakpoint-md-only: "only screen and (min-width: #{$md-start}) and (max-width: #{$md-max})"; // md-comienzo -> rango máx md
+$breakpoint-lg-up: "only screen and (min-width: #{$lg-start})"; // lg-comienzo -> rango de alcance
+$breakpoint-lg-only: "only screen and (min-width: #{$lg-start}) and (max-width: #{$lg-max})"; // lg-comienzo -> rango máx lg
+$breakpoint-xl-up: "only screen and (min-width: #{$xl-start})"; // xl-comienzo -> rango de alcance
 
 $breakpoints-all: ($breakpoint-xs-only, $breakpoint-sm-up, $breakpoint-sm-only, $breakpoint-md-up, $breakpoint-md-only, $breakpoint-lg-up, $breakpoint-lg-only, $breakpoint-xl-up);
 $breakpoint-ups: ($breakpoint-sm-up, $breakpoint-md-up, $breakpoint-lg-up, $breakpoint-xl-up);

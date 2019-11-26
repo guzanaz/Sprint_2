@@ -2,8 +2,8 @@
 @import 'grid-mixins';
 
 
-// No gutters
-// No text alignment with justified container classes (center-xs, for example)
+// sin gutters
+// Sin alineación de texto con clases de tipo justified container (center-xs, por ejemplo)
 
 .row {
   @include row();
@@ -57,7 +57,7 @@
     align-self: stretch;
 }
 
-// Mixin to run inside of for loop - creates col/breakpoint classes 
+// Mixin para ejecutar dentro de un loop - crea clases col/breakpoint  
 @mixin col-factory($thisPrefix) {
   .col-#{$thisPrefix} {
     box-sizing: border-box;
@@ -107,7 +107,7 @@
   .last-#{$thisPrefix} {
     order: 1;
   }
-} // Mixin to run inside of for loop - creates col/breakpoint classes
+} // Mixin para ejecutar dentro de un loop - crea clases col/breakpoint 
 
 @for $i from 1 through length($breakpoint-up-prefixes) {
   $thisPrefix: nth($breakpoint-up-prefixes, $i);
